@@ -1,0 +1,91 @@
+#mycontact {
+    background-color: var(--clr-main);
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .section-title {
+        text-transform: uppercase;
+        color: var(--clr-secondary);
+        font-weight: 900;
+        margin-bottom: 2.4em;
+        text-align: center;
+    }
+
+
+    form {
+    
+        display: block;
+        width:100%;
+
+        label {
+            display: flex;
+            margin: 1.2em 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--clr-secondary);
+        }
+        input,
+        textarea {
+            width: 100%;
+        }
+        input,
+        textarea, 
+        select {
+            padding: 1.2rem 1.4rem;
+            color: #eee;
+            background: var(--clr-accent);
+            margin-bottom: 2.4rem;
+            border: 0;
+            outline: none;
+            font-size: 1.2rem;
+            line-height: 24px;
+        }
+        input[type="text"], input[type="password"], input[type="email"], textarea, select {
+            display: block;
+            margin: 0 0 24px 0;
+            min-width: 225px;
+            max-width: 100%;
+        }
+
+        button.submit {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--clr-accent);
+            background: var(--clr-secondary);
+            border: none;
+            cursor: pointer;
+            height: auto;  
+            border-radius: 3px;
+            margin: 30px 0 24px 0;
+
+            &:hover {
+                background-color: var(--clr-accent);
+                color: var(--clr-secondary)
+            }
+        }
+        .button, .button:visited, button, input[type="submit"], input[type="reset"], input[type="button"] {
+            font-size: 1.2rem;
+            background: #11ABB0;
+            display: inline-block;
+            text-decoration: none;
+            letter-spacing: 0;
+            color: var(--clr-accent);
+            padding: 1.2em;
+            margin-bottom: 2.4em;
+            border: none;
+            cursor: pointer;
+            height: auto;
+            transition: all .2s ease-in-out;
+            border-radius: 3px;
+        }
+        textarea {
+            resize: none;
+        }
+    }
+
+}

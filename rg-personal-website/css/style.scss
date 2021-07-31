@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'MyLogoFont';
+    src: url('/font/AlexBrush-Regular.woff2') format('woff2'),
+        url('/font/AlexBrush-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --clr-main: #06111c;
+    --clr-secondary: #e6f3ff;
+    --clr-accent: #092929;
+
+    --screen-width:     320px;
+    --screen-height:    560px;
+    --header-bg-color:  #673AB7;
+    --splash-bg-color:  #368887;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+h1 {
+    font-family: 'MyLogoFont';
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+}
+h2 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+h4 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+h5 {
+    font-size: 1.4rem;
+}
+p {
+    font-size: 2.4ch;
+    line-height: 2;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.row {
+    width: 90%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+section {
+    padding: 4.8em 0;
+}
+
+@import "home";
+@import "about";
+@import "skills";
+@import "works";
+@import "contact";
+@import "footer";
+@import "404";
+@import "media-queries";

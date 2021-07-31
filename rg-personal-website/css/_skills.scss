@@ -1,0 +1,327 @@
+#myskills {
+    background-color: #fff;
+
+    #skills {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .section-title {
+            text-transform: uppercase;
+            color: var(--clr-main);
+            font-weight: 500;
+            margin-bottom: 4.8em;
+
+            &::after {
+                content: "";
+                width: 6rem;
+                height: 0.4rem;
+                background-color: var(--clr-accent);
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .skills__setrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .skill {
+                position: relative;
+                margin-bottom: 9.2em;
+                text-align: center;
+
+
+                .inner {
+                    position: relative;
+                    z-index: 6;
+                    height: 70px;
+                    width: 70px;
+                    background-color: #fff;
+                    border-radius: 100%;
+                    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+                }
+
+                .circle {
+
+                    .left{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100px;
+                        height: 100px;
+                        background-color: rgb(204, 204, 204);
+                        border-radius: 100%;
+                        clip: rect(0px, 100px, 100px, 50px);
+
+                        
+                        .phtml {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 50px, 100px, 0px);
+                        }
+                        .phtml.html-animate {
+                            position: absolute;
+                            z-index: 1;
+                            animation: left 1s linear both;
+                            background-color: #ffa600;
+                        }
+                        // ------
+                        .pcss {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 50px, 100px, 0px);
+                        }
+                        .pcss.css-animate {
+                            position: absolute;
+                            z-index: 1;
+                            animation: left 1s linear both;
+                            background-color: #0051ff;
+                        }
+                        // ------
+                        .pjs {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 50px, 100px, 0px);
+                        }
+                        .pjs.js-animate {
+                            position: absolute;
+                            z-index: 1;
+                            animation: left 1s linear both;
+                            background-color: #2bff00;
+                        }
+                        // ------
+                        .pphp {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 50px, 100px, 0px);
+                        }
+                        .pphp.php-animate {
+                            position: absolute;
+                            z-index: 1;
+                            animation: left 1s linear both;
+                            background-color: #ff1e00;
+                        }
+                        // ------
+                        .pmysql {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 50px, 100px, 0px);
+                        }
+                        .pmysql.mysql-animate {
+                            position: absolute;
+                            z-index: 1;
+                            animation: left 1s linear both;
+                            background-color: #00e1ff;
+                        }
+                        // ------
+                        .pjava {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 50px, 100px, 0px);
+                        }
+                        .pjava.java-animate {
+                            position: absolute;
+                            z-index: 1;
+                            animation: left 1s linear both;
+                            background-color: #ff00ea;
+                        }
+
+                        @keyframes left {
+                            100%{
+                              transform: rotate(180deg);
+                            }
+                        }  
+                    }
+
+                    .right{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100px;
+                        height: 100px;
+                        background-color: #ccc;
+                        border-radius: 100%;
+                        clip: rect(0px, 50px, 100px, 0px);
+                        
+                        
+                        .progress-html {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 100px, 100px, 50px);
+                        }
+                        .progress-html.html-animation {
+                            position: absolute;
+                            z-index: 1;
+                            animation: right-phtml 1s linear both;
+                            animation-delay: 1s;
+                            background-color: #ffa600;
+                        }
+                        @keyframes right-phtml {
+                            100%{
+                                transform: rotate(120deg);
+                            }
+                        }
+                        // ------
+                        .progress-css {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 100px, 100px, 50px);
+                        }
+                        .progress-css.css-animation {
+                            position: absolute;
+                            z-index: 1;
+                            animation: right-pcss 1s linear both;
+                            animation-delay: 1s;
+                            background-color: #0051ff;
+                        }
+                        @keyframes right-pcss {
+                            100%{
+                              transform: rotate(80deg);
+                            }
+                        }
+                        // ------
+                        .progress-js {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 100px, 100px, 50px);
+                        }
+                        .progress-js.js-animation {
+                            position: absolute;
+                            z-index: 1;
+                            animation: right-pjs 1s linear both;
+                            animation-delay: 1s;
+                            background-color: #2bff00;
+                        }
+                        @keyframes right-pjs {
+                            100%{
+                              transform: rotate(50deg);
+                            }
+                        }
+                        // ------
+                        .progress-php {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 100px, 100px, 50px);
+                        }
+                        .progress-php.php-animation {
+                            position: absolute;
+                            z-index: 1;
+                            animation: right-pphp 1s linear both;
+                            animation-delay: 1s;
+                            background-color: #ff1e00;
+                        }
+                        @keyframes right-pphp {
+                            100%{
+                              transform: rotate(40deg);
+                            }
+                        }
+                        // ------
+                        .progress-mysql {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 100px, 100px, 50px);
+                        }
+                        .progress-mysql.mysql-animation {
+                            position: absolute;
+                            z-index: 1;
+                            animation: right-pmysql 1s linear both;
+                            animation-delay: 1s;
+                            background-color: #00e1ff;
+                        }
+                        @keyframes right-pmysql {
+                            100%{
+                              transform: rotate(45deg);
+                            }
+                        }
+                        // ------
+                        .progress-java {
+                            position: absolute;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100%;
+                            clip: rect(0px, 100px, 100px, 50px);
+                        }
+                        .progress-java.java-animation {
+                            position: absolute;
+                            z-index: 1;
+                            animation: right-pjava 1s linear both;
+                            animation-delay: 1s;
+                            background-color: #ff00ea;
+                        }
+                        @keyframes right-pjava {
+                            100%{
+                              transform: rotate(30deg);
+                            }
+                        }
+
+                    }
+                    
+                    .container {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 10;
+
+                        .icons {
+                            position: absolute;
+                            z-index: 1;
+                            width: 60px;
+                            height: 60px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+
+                        p {
+                            margin-top: 10em;
+                            color: var(--clr-main);
+                            font-weight: 500;
+                            letter-spacing: 5px;
+                        }
+                    }
+                   
+                }
+                
+            } // skill-end
+
+        } //skills__setrow
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+        .fade-in.appear {
+            opacity: 1;
+        }
+    }
+
+}
