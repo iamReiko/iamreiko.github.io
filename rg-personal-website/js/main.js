@@ -29,7 +29,7 @@ sectionOneObserver.observe(header);
 ------------------------------------------------------*/
 const sections = document.querySelectorAll("section");
 const navlink = document.querySelectorAll('nav ul li a');
-
+const navigationlink = document.querySelectorAll('#nav #menu .nav__item .nav__link');
 
 window.addEventListener('scroll', ()=> {
     let current = "";
@@ -46,6 +46,33 @@ window.addEventListener('scroll', ()=> {
         console.log(current);
         if(a.classList.contains(current)){
             a.classList.add('active');
+        }
+    })
+
+    // navigationlink.forEach( a => {
+    //     a.classList.remove('current');
+    //     if(a.classList.contains(current)){
+    //         a.classList.add('current');
+    //     }
+    // })
+
+});
+
+
+window.addEventListener('scroll', ()=> {
+    let activelinks = "";
+    sections.forEach( section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(pageYOffset >= (sectionTop - sectionHeight / 2)){
+            activelinks = section.getAttribute('id');
+        }
+    })
+
+    navigationlink.forEach( a => {
+        a.classList.remove('current');
+        if(a.classList.contains(activelinks)){
+            a.classList.add('current');
         }
     })
 
