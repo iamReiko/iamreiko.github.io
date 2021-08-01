@@ -10,6 +10,7 @@
   --clr-main: #06111c;
   --clr-secondary: #e6f3ff;
   --clr-accent: #092929;
+  --clr-red: #BB2020;
   --screen-width:     320px;
   --screen-height:    560px;
   --header-bg-color:  #673AB7;
@@ -127,7 +128,7 @@ header .nav-container nav #a-logo::after {
   content: "";
   width: 36px;
   height: 36px;
-  background-color: var(--clr-accent);
+  background-color: #be1e1e;
   position: absolute;
   top: 0;
   left: 0;
@@ -251,7 +252,7 @@ header .nav-container nav .nav__link:hover, header .nav-container nav .nav__link
 }
 
 header .nav-container nav .nav__link.current {
-  color: var(--clr-secondary);
+  color: var(--clr-red);
   font-weight: 900;
 }
 
@@ -391,7 +392,7 @@ header .banner p {
 }
 
 header .banner h2.section-title {
-  color: white;
+  color: #BB2020;
   font-family: 'opensans-bold', sans-serif;
   font-weight: 600;
   line-height: 2;
@@ -490,7 +491,8 @@ header .scroll-down::before {
 }
 
 #about {
-  background-color: var(--clr-main);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--clr-main)), to(var(--clr-accent)));
+  background: linear-gradient(0deg, var(--clr-main), var(--clr-accent));
   color: var(--clr-secondary);
 }
 
@@ -559,7 +561,8 @@ header .scroll-down::before {
 }
 
 #myskills {
-  background-color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--clr-secondary)), to(white));
+  background: linear-gradient(var(--clr-secondary), white);
 }
 
 #myskills #skills {
@@ -648,7 +651,7 @@ header .scroll-down::before {
   z-index: 1;
   -webkit-animation: left 1s linear both;
           animation: left 1s linear both;
-  background-color: #ffa600;
+  background-color: #e34c26;
 }
 
 #myskills #skills .skills__setrow .skill .circle .left .pcss {
@@ -664,7 +667,7 @@ header .scroll-down::before {
   z-index: 1;
   -webkit-animation: left 1s linear both;
           animation: left 1s linear both;
-  background-color: #0051ff;
+  background-color: #264de4;
 }
 
 #myskills #skills .skills__setrow .skill .circle .left .pjs {
@@ -680,7 +683,7 @@ header .scroll-down::before {
   z-index: 1;
   -webkit-animation: left 1s linear both;
           animation: left 1s linear both;
-  background-color: #2bff00;
+  background-color: #f0db4f;
 }
 
 #myskills #skills .skills__setrow .skill .circle .left .pphp {
@@ -696,7 +699,7 @@ header .scroll-down::before {
   z-index: 1;
   -webkit-animation: left 1s linear both;
           animation: left 1s linear both;
-  background-color: #ff1e00;
+  background-color: crimson;
 }
 
 #myskills #skills .skills__setrow .skill .circle .left .pmysql {
@@ -712,7 +715,7 @@ header .scroll-down::before {
   z-index: 1;
   -webkit-animation: left 1s linear both;
           animation: left 1s linear both;
-  background-color: #00e1ff;
+  background-color: #f29111;
 }
 
 #myskills #skills .skills__setrow .skill .circle .left .pjava {
@@ -728,7 +731,7 @@ header .scroll-down::before {
   z-index: 1;
   -webkit-animation: left 1s linear both;
           animation: left 1s linear both;
-  background-color: #ff00ea;
+  background-color: #5382a1;
 }
 
 @-webkit-keyframes left {
@@ -773,7 +776,7 @@ header .scroll-down::before {
           animation: right-phtml 1s linear both;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #ffa600;
+  background-color: #e34c26;
 }
 
 @-webkit-keyframes right-phtml {
@@ -805,7 +808,7 @@ header .scroll-down::before {
           animation: right-pcss 1s linear both;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #0051ff;
+  background-color: #264de4;
 }
 
 @-webkit-keyframes right-pcss {
@@ -837,7 +840,7 @@ header .scroll-down::before {
           animation: right-pjs 1s linear both;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #2bff00;
+  background-color: #f0db4f;
 }
 
 @-webkit-keyframes right-pjs {
@@ -869,7 +872,7 @@ header .scroll-down::before {
           animation: right-pphp 1s linear both;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #ff1e00;
+  background-color: crimson;
 }
 
 @-webkit-keyframes right-pphp {
@@ -901,7 +904,7 @@ header .scroll-down::before {
           animation: right-pmysql 1s linear both;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #00e1ff;
+  background-color: #f29111;
 }
 
 @-webkit-keyframes right-pmysql {
@@ -933,7 +936,7 @@ header .scroll-down::before {
           animation: right-pjava 1s linear both;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #ff00ea;
+  background-color: #5382a1;
 }
 
 @-webkit-keyframes right-pjava {
@@ -1087,6 +1090,18 @@ header .scroll-down::before {
   text-align: center;
 }
 
+#mycontact #warning {
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+  margin-bottom: 2.4em;
+  padding: 1.2em 1.6em;
+}
+
+#mycontact #warning p#red {
+  color: var(--clr-accent);
+  margin-left: auto;
+}
+
 #mycontact form {
   display: block;
   width: 100%;
@@ -1163,6 +1178,11 @@ header .scroll-down::before {
 
 #mycontact form textarea {
   resize: none;
+}
+
+#mycontact form .required {
+  color: #FF0000;
+  margin-left: 2px;
 }
 
 footer {
@@ -1767,6 +1787,9 @@ body {
   }
   /* contacts styles
     ------------------------------------------------------------------ */
+  #mycontact #warning {
+    margin-left: 20%;
+  }
   #mycontact form {
     display: -webkit-box;
     display: -ms-flexbox;

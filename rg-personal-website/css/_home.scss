@@ -41,7 +41,7 @@ header {
                     content: "";
                     width: 36px;
                     height: 36px;
-                    background-color: var(--clr-accent);
+                    background-color: hsl(0, 73%, 43%);
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -155,7 +155,7 @@ header {
                     }
                 }
                 &__link.current {
-                    color: var(--clr-secondary);
+                    color: var(--clr-red);
                     font-weight: 900;
                 }
             }
@@ -243,8 +243,8 @@ header {
                 
                 //animate the menu icon
                 .menuicon {
-                color:var(--clr-secondary);
-                transform:rotate(180deg);
+                    color:var(--clr-secondary);
+                    transform:rotate(180deg);
                 
                 &__circle {
                     stroke-dashoffset:0;
@@ -301,7 +301,7 @@ header {
         }
 
         h2.section-title {
-            color: white;
+            color: #BB2020;
             font-family: 'opensans-bold', sans-serif;
             font-weight: 600;
             line-height: 2;

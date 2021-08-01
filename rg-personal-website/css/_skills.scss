@@ -1,5 +1,6 @@
 #myskills {
-    background-color: #fff;
+    // background-color: #fff;
+    background: linear-gradient( var(--clr-secondary),hsl(0, 0%, 100%) );
 
     #skills {
         display: flex;
@@ -70,7 +71,7 @@
                             position: absolute;
                             z-index: 1;
                             animation: left 1s linear both;
-                            background-color: #ffa600;
+                            background-color: #e34c26;
                         }
                         // ------
                         .pcss {
@@ -84,7 +85,7 @@
                             position: absolute;
                             z-index: 1;
                             animation: left 1s linear both;
-                            background-color: #0051ff;
+                            background-color: #264de4;
                         }
                         // ------
                         .pjs {
@@ -98,7 +99,7 @@
                             position: absolute;
                             z-index: 1;
                             animation: left 1s linear both;
-                            background-color: #2bff00;
+                            background-color: #f0db4f;
                         }
                         // ------
                         .pphp {
@@ -112,7 +113,7 @@
                             position: absolute;
                             z-index: 1;
                             animation: left 1s linear both;
-                            background-color: #ff1e00;
+                            background-color: crimson;
                         }
                         // ------
                         .pmysql {
@@ -126,7 +127,7 @@
                             position: absolute;
                             z-index: 1;
                             animation: left 1s linear both;
-                            background-color: #00e1ff;
+                            background-color: #f29111;
                         }
                         // ------
                         .pjava {
@@ -140,7 +141,7 @@
                             position: absolute;
                             z-index: 1;
                             animation: left 1s linear both;
-                            background-color: #ff00ea;
+                            background-color: #5382a1;
                         }
 
                         @keyframes left {
@@ -174,7 +175,7 @@
                             z-index: 1;
                             animation: right-phtml 1s linear both;
                             animation-delay: 1s;
-                            background-color: #ffa600;
+                            background-color: #e34c26;
                         }
                         @keyframes right-phtml {
                             100%{
@@ -194,7 +195,7 @@
                             z-index: 1;
                             animation: right-pcss 1s linear both;
                             animation-delay: 1s;
-                            background-color: #0051ff;
+                            background-color: #264de4;
                         }
                         @keyframes right-pcss {
                             100%{
@@ -214,7 +215,7 @@
                             z-index: 1;
                             animation: right-pjs 1s linear both;
                             animation-delay: 1s;
-                            background-color: #2bff00;
+                            background-color: #f0db4f;
                         }
                         @keyframes right-pjs {
                             100%{
@@ -234,7 +235,7 @@
                             z-index: 1;
                             animation: right-pphp 1s linear both;
                             animation-delay: 1s;
-                            background-color: #ff1e00;
+                            background-color: crimson;
                         }
                         @keyframes right-pphp {
                             100%{
@@ -254,7 +255,7 @@
                             z-index: 1;
                             animation: right-pmysql 1s linear both;
                             animation-delay: 1s;
-                            background-color: #00e1ff;
+                            background-color: #f29111;
                         }
                         @keyframes right-pmysql {
                             100%{
@@ -274,7 +275,7 @@
                             z-index: 1;
                             animation: right-pjava 1s linear both;
                             animation-delay: 1s;
-                            background-color: #ff00ea;
+                            background-color: #5382a1;
                         }
                         @keyframes right-pjava {
                             100%{

@@ -15,6 +15,18 @@
         text-align: center;
     }
 
+    #warning {
+        background-color: #ffffcc;
+        border-left: 6px solid #ffeb3b;
+        margin-bottom: 2.4em;
+        padding: 1.2em 1.6em;
+        p#red {
+            color: var(--clr-accent) ;
+            margin-left: auto;
+            
+        }
+    }
+   
 
     form {
     
@@ -84,6 +96,10 @@
         }
         textarea {
             resize: none;
+        }
+        .required {
+            color: #FF0000 ;
+            margin-left: 2px;
         }
     }
 

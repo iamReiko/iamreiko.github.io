@@ -1,5 +1,6 @@
 #about {
-    background-color: var(--clr-main);
+    // background-color: var(--clr-main);
+    background: linear-gradient( 0deg, var(--clr-main),var(--clr-accent) );
     color: var(--clr-secondary);
 
     #about-me {

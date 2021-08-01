@@ -258,19 +258,22 @@
         <section id="mycontact" >
             <div class="row" id="contact">
                 <h3 class="section-title">Contact Richard</h3>
-                <p id="red"> Note! This is a working contact form. Feel free to message me your concerns. Thankyou. </p>
+                <div id="warning">
+                    <p id="red"> <strong>Note!</strong> This is a working contact form. Feel free to message me your concerns. Thankyou. </p>
+                </div>
+                
                 <div class="contact__forms">
                      <!-- form -->
                     <form action="https://formcarry.com/s/D1XcPtlAWVZ" method="POST" accept-charset="UTF-8" method="post" id="contactForm" name="contactForm">
     
                         <div>
                                 <label for="contactName">Name <span class="required">*</span></label>
-                                <input type="text" value="" size="35" id="contactName" name="contactName">
+                                <input type="text" value="" size="35" id="contactName" name="contactName" required>
                         </div>
 
                         <div>
                                 <label for="contactEmail">Email <span class="required">*</span></label>
-                                <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                                <input type="text" value="" size="35" id="contactEmail" name="contactEmail" required>
                         </div>
             
                         <div>
@@ -280,7 +283,7 @@
             
                         <div>
                             <label for="contactMessage">Message <span class="required">*</span></label>
-                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" required></textarea>
                         </div>
             
                         <div>
@@ -303,18 +306,15 @@
            <div class="columns">
   
               <ul class="social-links">
-                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                 <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                 <li><a href="#"><i class="fab fa-github"></i></a></li>
-                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                 <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                 <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                 <li><a href="https://www.facebook.com/richardsanico.galvez/"><i class="fab fa-facebook-f" target="_blank"></i></a></li>
+                 <li><a href="https://github.com/iamReiko"><i class="fab fa-github"></i></a></li>
+                 <li><a href="https://www.instagram.com/iam_akihiko/"><i class="fab fa-instagram"></i></a></li>
+                
               </ul>
   
               <ul class="copyright">
                  <li>© Copyright 2021 Richard</li>
-                 <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Me</a></li>
+                 <li>Design by <a href="https://www.facebook.com/richardsanico.galvez/" title="RG" target="_blank">Me</a></li>
                  <li>
                     <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                  </li> 
@@ -335,49 +335,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
      <script type="text/javascript" src="js/main.js"></script>
-     <script>
-
-            const nav = document.querySelector('#nav');
-            const menu = document.querySelector('#menu');
-            const menuToggle = document.querySelector('.nav__toggle');
-            let isMenuOpen = false;
-
-
-            // TOGGLE MENU ACTIVE STATE
-            menuToggle.addEventListener('click', e => {
-            e.preventDefault();
-            isMenuOpen = !isMenuOpen;
-            
-            // toggle a11y attributes and active class
-            menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
-            menu.hidden = !isMenuOpen;
-            nav.classList.toggle('nav--open');
-            });
-
-
-            // TRAP TAB INSIDE NAV WHEN OPEN
-            nav.addEventListener('keydown', e => {
-            // abort if menu isn't open or modifier keys are pressed
-            if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
-                return;
-            }
-            
-            // listen for tab press and move focus
-            // if we're on either end of the navigation
-            const menuLinks = menu.querySelectorAll('.nav__link');
-            if (e.keyCode === 9) {
-                if (e.shiftKey) {
-                if (document.activeElement === menuLinks[0]) {
-                    menuToggle.focus();
-                    e.preventDefault();
-                }
-                } else if (document.activeElement === menuToggle) {
-                menuLinks[0].focus();
-                e.preventDefault();
-                }
-            }
-            });
-
-     </script>
+     <script src="js/nav.js"></script>
 </body>
 </html>

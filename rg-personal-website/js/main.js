@@ -49,6 +49,12 @@ window.addEventListener('scroll', ()=> {
         }
     })
 
+    // navigationlink.forEach( a => {
+    //     a.classList.remove('current');
+    //     if(a.classList.contains(current)){
+    //         a.classList.add('current');
+    //     }
+    // })
 
 });
 
