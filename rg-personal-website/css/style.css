@@ -5,7 +5,6 @@
   font-style: normal;
   font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 :root {
   --clr-main: #06111c;
@@ -15,8 +14,6 @@
   --screen-height:    560px;
   --header-bg-color:  #673AB7;
   --splash-bg-color:  #368887;
-
-  --ff-logo: 'Dancing Script', cursive;
 }
 
 *,
@@ -39,7 +36,6 @@ html {
 /* Typography */
 h1 {
   font-family: 'MyLogoFont';
-  font-family: var(--ff-logo);
   font-size: 1.4rem;
   margin-top: 1.6rem;
 }
@@ -122,8 +118,9 @@ header .nav-container nav {
 header .nav-container nav #a-logo {
   color: white;
   text-decoration: none;
-  padding-left: 0.7rem;
+  padding-left: 0.9rem;
   position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header .nav-container nav #a-logo::after {
@@ -249,6 +246,11 @@ header .nav-container nav .nav__link {
 
 header .nav-container nav .nav__link:hover, header .nav-container nav .nav__link:focus {
   outline: 0;
+  color: var(--clr-secondary);
+  font-weight: 900;
+}
+
+header .nav-container nav .nav__link.current {
   color: var(--clr-secondary);
   font-weight: 900;
 }
