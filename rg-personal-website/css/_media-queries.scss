@@ -108,47 +108,50 @@
      /* about me styles
    ------------------------------------------------------------------ */
     #about-me {
-        flex-direction: row !important;
-
-        .selfimage {
-            margin-bottom: 2.4em;
-
-            img {
-                width: 100%;
-                max-width: 100%;
-                height: auto !important;
-                object-fit:fill !important;
-                object-position: top;
+        #about-me {
+            flex-direction: row;
+    
+            .selfimage {
+                margin-bottom: 2.4em;
+    
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto !important;
+                    object-fit:fill !important;
+                    object-position: top;
+                }
             }
+    
+    
+            .right-column {
+                margin-left: 2.4rem;
+    
+                .right__body {
+                    p.section-info {
+                        font-size: 1.4rem;
+                    }
+                }
+    
+                .right-row {
+                    display: flex;
+                    flex-direction: row;
+                  
+    
+                    p {
+                        font-size: 1.4rem;
+                    }
+    
+                    .row-download{
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+    
         }
-
-
-        .right-column {
-            margin-left: 2.4rem;
-
-            .right__body {
-                p.section-info {
-                    font-size: 2.5ch;
-                }
-            }
-
-            .right-row {
-                display: flex;
-                flex-direction: row;
-              
-
-                p {
-                    font-size: 2.5ch;
-                }
-
-                .row-download{
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-        }
-
     }
+   
 
      /* skill styles
    ------------------------------------------------------------------ */
