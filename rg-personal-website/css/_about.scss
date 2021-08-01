@@ -47,7 +47,8 @@
             }
 
             .right-row{
-                
+                display: flex;
+                flex-direction: column;
 
                 .row-download {
                     margin-top: 3.2em;
