@@ -154,6 +154,10 @@ header {
                         font-weight: 900;
                     }
                 }
+                &__link.current {
+                    color: var(--clr-secondary);
+                    font-weight: 900;
+                }
             }
             
             
