@@ -511,9 +511,10 @@ header .scroll-down::before {
 }
 
 #about #about-me .selfimage img {
+  display: block;
+  margin: 0 auto;
   width: 100%;
   max-width: 100%;
-  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -539,6 +540,16 @@ header .scroll-down::before {
 
 #about #about-me .right-column .right__header2 .section-title {
   font-weight: 500;
+}
+
+#about #about-me .right-column .right-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #about #about-me .right-column .right-row .row-download {
@@ -1100,6 +1111,7 @@ header .scroll-down::before {
 #mycontact #warning p#red {
   color: var(--clr-accent);
   margin-left: auto;
+  font-size: 1.2rem;
 }
 
 #mycontact form {
@@ -1710,31 +1722,27 @@ body {
   }
   /* about me styles
    ------------------------------------------------------------------ */
-  #about-me {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+  #about #about-me {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  #about-me .selfimage {
+  #about #about-me .selfimage {
     margin-bottom: 2.4em;
+    width: 30%;
   }
-  #about-me .selfimage img {
-    width: 100%;
-    max-width: 100%;
-    height: auto !important;
-    -o-object-fit: fill !important;
-       object-fit: fill !important;
-    -o-object-position: top;
-       object-position: top;
+  #about #about-me .selfimage img {
+    width: 364px;
   }
-  #about-me .right-column {
+  #about #about-me .right-column {
+    width: 70%;
     margin-left: 2.4rem;
   }
-  #about-me .right-column .right__body p {
+  #about #about-me .right-column .right__body p.section-info {
     font-size: 2.8ch;
   }
-  #about-me .right-column .right-row {
+  #about #about-me .right-column .right-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1743,10 +1751,10 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #about-me .right-column .right-row p {
+  #about #about-me .right-column .right-row p {
     font-size: 2.7ch;
   }
-  #about-me .right-column .right-row .row-download {
+  #about #about-me .right-column .right-row .row-download {
     margin-left: auto;
     margin-right: auto;
   }
@@ -1789,6 +1797,9 @@ body {
     ------------------------------------------------------------------ */
   #mycontact #warning {
     margin-left: 20%;
+  }
+  #mycontact #warning p#red {
+    font-size: 1.4rem;
   }
   #mycontact form {
     display: -webkit-box;
